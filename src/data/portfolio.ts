@@ -8,7 +8,7 @@ export const portfolios: PortfolioItem[] = [
     category: "Website UMKM",
     description: "Desain website e-commerce modern untuk UMKM yang dilengkapi dengan sistem keranjang belanja dan antarmuka yang ramah pengguna.",
     image: "/images/portfolio_umkm.jpg",
-    demoUrl: "", // Isi dengan URL jika ada
+    demoUrl: "https://bagsphanora.vercel.app/", // Isi dengan URL jika ada
     isConcept: true,
     tags: ["E-Commerce", "Toko Online", "UMKM"]
   },
