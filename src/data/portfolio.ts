@@ -7,19 +7,19 @@ export const portfolios: PortfolioItem[] = [
     title: "E-Commerce",
     category: "Website UMKM",
     description: "Desain website e-commerce modern untuk UMKM yang dilengkapi dengan sistem keranjang belanja dan antarmuka yang ramah pengguna.",
-    image: "/images/ecomerce.png",
+    image: "/images/ecomerce_mockup.png",
     demoUrl: "https://bagsphanora.vercel.app/", // Isi dengan URL jika ada
     isConcept: true,
     tags: ["E-Commerce", "Toko Online", "UMKM"]
   },
   {
     id: "p2",
-    slug: "dila-dan-ahmad",
-    title: "Dila dan Ahmad",
+    slug: "Ahmad-dan-Natasya",
+    title: "Ahmad dan Natasya",
     category: "Undangan Digital",
     description: "Undangan pernikahan digital interaktif dengan desain elegan, dilengkapi fitur RSVP pintar dan galeri foto.",
-    image: "/images/portfolio_invitation.jpg",
-    demoUrl: "", // Isi dengan URL jika ada
+    image: "/images/wedding1.png",
+    demoUrl: "https://undangan-ahmad.vercel.app/", // Isi dengan URL jika ada
     isConcept: true,
     tags: ["Pernikahan", "Elegan", "RSVP"]
   },
