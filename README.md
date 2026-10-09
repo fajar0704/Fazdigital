@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FAZ DIGITAL - Digital Agency Website
 
-## Getting Started
+Website resmi untuk FAZ DIGITAL, penyedia jasa pembuatan website UMKM, undangan digital, dan landing page. Website ini dibangun menggunakan Next.js (App Router), TypeScript, dan Tailwind CSS.
 
-First, run the development server:
+## Fitur Utama
+- **Desain Modern & Responsif**: Menggunakan glassmorphism, gradient dinamis, dan pendekatan mobile-first.
+- **Data Statis Terpusat**: Seluruh konten layanan, portofolio, harga, dan FAQ diatur dalam direktori `src/data/`.
+- **Integrasi WhatsApp**: Mengarahkan formulir kontak dan CTA langsung ke WhatsApp dengan pesan pre-filled tanpa menggunakan backend.
+- **SEO & Aksesibilitas Teroptimasi**: Dilengkapi dengan sitemap, robots.txt, semantic HTML, dan meta tags.
+- **Tanpa Backend/Database**: Proyek ini sepenuhnya frontend, mudah di-deploy dan aman.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Struktur Proyek
+- `/src/app` - Routing halaman (Next.js App Router)
+- `/src/components` - Komponen React (UI, Layout, Home, Services, dll)
+- `/src/config` - Konfigurasi situs utama (site.ts)
+- `/src/data` - Data statis (services, portfolio, pricing, faq)
+- `/src/lib` - Utilitas pendukung (whatsapp.ts)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Cara Menjalankan Secara Lokal
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Pastikan Anda telah menginstal Node.js (versi terbaru disarankan).
+2. Install dependensi proyek:
+   ```bash
+   npm install
+   ```
+3. Jalankan server development:
+   ```bash
+   npm run dev
+   ```
+4. Buka `http://localhost:3000` di browser Anda.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Konfigurasi Sebelum Deployment
 
-## Learn More
+Sebelum website dipublikasikan, Anda **wajib** mengubah nilai konfigurasi pada file `src/config/site.ts`:
 
-To learn more about Next.js, take a look at the following resources:
+- `whatsappNumber`: Ganti dengan nomor WhatsApp asli dengan format internasional (contoh: "6281234567890").
+- `instagramUrl`: Ganti dengan URL profil Instagram bisnis.
+- `email`: Ganti dengan alamat email bisnis.
+- `siteUrl`: Ganti dengan URL domain produksi.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Cara Deployment ke Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Proyek ini telah dikonfigurasi agar siap di-deploy ke Vercel:
 
-## Deploy on Vercel
+1. Push kode ke repository GitHub Anda.
+2. Login ke akun [Vercel](https://vercel.com).
+3. Klik tombol **Add New...** > **Project**.
+4. Import repository GitHub Anda.
+5. Biarkan framework preset pada **Next.js**.
+6. Klik **Deploy**.
+7. Website Anda akan aktif dalam beberapa menit.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Dibangun khusus untuk FAZ DIGITAL.*
